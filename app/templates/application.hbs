@@ -1,7 +1,17 @@
 {{page-title "TheApp"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+ <BasicDropdown  as | Dropdown |>
+    <Dropdown.Trigger class="user-greeting">
+      <button type="button" class="btn-content fill-yiq">Name
+      </button>
+    </Dropdown.Trigger>
+    <Dropdown.Content class="user-actions">
+      <div class="pop-up-box box-arrow">
+        Content
+        
+      </div>
+    </Dropdown.Content>
+  </BasicDropdown>
+  <Test {{did-insert this.test }}/>
 
 {{outlet}}
